@@ -17,10 +17,11 @@ public class AppView {
         String quantity = scanner.nextLine().trim();
         System.out.print("Enter product price, USD: ");
         String price = scanner.nextLine().trim();
-        System.out.println("Do you need delivery?");
+        System.out.println("Do you need delivery?\n" +
+                "(give an answer in the form of 'yes','no' or '+','-')");
         String delivery = scanner.nextLine().trim();
         scanner.close();
-        return new String[]{name, phone, quantity, price,delivery};
+        return new String[]{name, phone, quantity, price, delivery};
     }
 
     public void getOutput(String output) {
